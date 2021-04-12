@@ -1,9 +1,12 @@
 ## qonic-misc Python Library:
 Python library with miscellaneous tools to be used in conjunction with the qonic framework
+
 **To install:** `pip3 install qonic_misc`
+
 **Includes:**  
   * `qonic_misc.RotationConversions`: 
     * `operator_to_updated_state(operator, theta_init, phi_init)`
+    
         **Description:**
         * this function takes a quantum operator (corresponding to a qbit gate), and the initial qbit state defined by the angles theta and phi
         * theta and phi define the state based on some point on the bloch sphere in spherical coordinates
@@ -19,10 +22,14 @@ Python library with miscellaneous tools to be used in conjunction with the qonic
         * `[theta_updated, phi_updated] <type 'list'>`: list storing the updated values for theta and phi after being operated on by 'operator'
 
         **Example:**
-            `>>> rc = RotationConversions()`
-            `>>> pauli_z = [[1, 0], [0, -1]] # pauli z gate`
-            `>>> print(rc.operator_to_updated_state(pauli_z, 1, 1)) # operate on the initial state of ['theta': 1, 'phi': 1]`
-            `[-1.0, 1.0]`
+        
+            ```
+            >>> rc = RotationConversions()
+            >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
+            >>> print(rc.operator_to_updated_state(pauli_z, 1, 1)) # operate on the initial state of ['theta': 1, 'phi': 1]
+            [-1.0, 1.0]
+            ```
+            
             
     * `operator_to_rotation(operator, print_optimization_loss=False, epochs=300, num_of_vectors=3)`
         **Description:**
@@ -39,10 +46,13 @@ Python library with miscellaneous tools to be used in conjunction with the qonic
         * `[RotX, RotY, RotZ] <type 'list'>`: list storing the spacial rotations along each axis corresponding to the passed operator
 
         **Example:**
-            `>>> rc = RotationConversions()`
-            `>>> pauli_z = [[1, 0], [0, -1]] # pauli z gate`
-            `>>> print(rc.operator_to_rotation(pauli_z)) # solve for the spacial rotation of the pauli z gate`
-            `[0.0, 0.0, 3.14159]`
+        
+            ```
+            >>> rc = RotationConversions()
+            >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
+            >>> print(rc.operator_to_rotation(pauli_z)) # solve for the spacial rotation of the pauli z gate
+            [0.0, 0.0, 3.14159]
+            ```
             
             
   * `qonic_misc.OperatorChecker`: tool for evaluating operators
