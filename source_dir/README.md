@@ -1,3 +1,6 @@
+[![Build](https://api.travis-ci.com/Qonic-Team/qonic-misc.svg?branch=main)](https://travis-ci.com/github/Qonic-Team/qonic-misc)
+[![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-misc)
+
 ## qonic-misc Python Library:
 Python library with miscellaneous tools to be used in conjunction with the qonic framework
 
