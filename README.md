@@ -1,5 +1,4 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg)](https://snyk.io/test/github/Qonic-Team/qonic-misc)
-requires.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-misc)
 
 # qonic-misc
 This repository stores miscellaneous tools and resources for use with the qonic framework
