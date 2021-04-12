@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: qonic-misc
+Version: 0.0.1
+Summary: Python library with miscellaneous tools to be used in conjunction with the qonic framework
+Home-page: https://github.com/Qonic-Team/qonic-misc.git
+Author: cogrpar
+Author-email: owen.r.welsh@hotmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/Qonic-Team/qonic-misc/archive/refs/heads/main.zip
+Description: UNKNOWN
+Keywords: qonic,qonic_misc
+Platform: UNKNOWN

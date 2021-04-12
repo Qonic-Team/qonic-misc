@@ -1,0 +1,10 @@
+README.md
+setup.py
+qonic_misc/OperatorChecker.py
+qonic_misc/RotationConversions.py
+qonic_misc/__init__.py
+qonic_misc.egg-info/PKG-INFO
+qonic_misc.egg-info/SOURCES.txt
+qonic_misc.egg-info/dependency_links.txt
+qonic_misc.egg-info/requires.txt
+qonic_misc.egg-info/top_level.txt
