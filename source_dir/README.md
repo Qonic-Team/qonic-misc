@@ -24,7 +24,7 @@ Python library with miscellaneous tools to be used in conjunction with the qonic
         **Example:**
         
             
-            >>> rc = RotationConversions()
+            >>> rc = qonic_misc.RotationConversions()
             >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
             >>> print(rc.operator_to_updated_state(pauli_z, 1, 1)) # operate on the initial state of ['theta': 1, 'phi': 1]
             [-1.0, 1.0]
@@ -48,7 +48,7 @@ Python library with miscellaneous tools to be used in conjunction with the qonic
         **Example:**
         
             
-            >>> rc = RotationConversions()
+            >>> rc = qonic_misc.RotationConversions()
             >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
             >>> print(rc.operator_to_rotation(pauli_z)) # solve for the spacial rotation of the pauli z gate
             [0.0, 0.0, 3.14159]
