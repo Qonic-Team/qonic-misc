@@ -14,7 +14,7 @@ operator3 = [  [h,    h],
             [h,   -h]  ] # hadamard
 operator = [operator0, operator1, operator2, operator3][1]
 rc = RotationConversions()
-rotation = [i.round(5) for i in rc.operator_to_rotation(operator, epochs=300, num_of_vectors=6, print_optimization_loss=False)]
+rotation = [i.round(5) for i in rc.operator_to_rotation(operator, epochs=200, num_of_vectors=4, print_optimization_loss=False)]
 print("\nRotation Vector [RotX, RotY, RotZ]:")
 print("\t\t" + str(rotation))
 
