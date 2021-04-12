@@ -18,4 +18,4 @@ jobs:
 install: pip3 install --upgrade pip && pip3 install -r source_dir/requirements.txt # all three OSes agree about 'pip3' 
 # 'python' points to Python 2.7 on macOS but points to Python 3.8 on Linux and Windows
 # 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
-script: python3 source_dir/test.py || python source_dir/python test.py
+script: python3 source_dir/test.py || python source_dir/test.py
