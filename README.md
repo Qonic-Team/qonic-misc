@@ -1,5 +1,5 @@
 [![Build](https://api.travis-ci.com/Qonic-Team/qonic-misc.svg?branch=main)](https://travis-ci.com/github/Qonic-Team/qonic-misc)
-[![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-mischttps://snyk.io/test/github/Qonic-Team/qonic-misc?targetFile=source_dir/requirements.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-misc?targetFile=source_dir/requirements.txt)
 
 # qonic-misc
 This repository stores miscellaneous tools and resources for use with the qonic framework
