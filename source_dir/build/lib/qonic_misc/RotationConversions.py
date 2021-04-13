@@ -5,7 +5,7 @@ from numpy import arccos as acos
 from numpy import log as ln
 import tensorflow as tf
 import random
-from OperatorChecker import OperatorChecker
+from .OperatorChecker import *
 # this is an example of how quantum operator rotations can be mapped to rotations on the bloch sphere
 # this code is not fully optimized, but its intended purpose is to demonstrate how one would go about doing these calculations by hand
 
