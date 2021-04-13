@@ -5,6 +5,7 @@ from numpy import arccos as acos
 from numpy import log as ln
 import tensorflow as tf
 import random
+import OperatorChecker
 # this is an example of how quantum operator rotations can be mapped to rotations on the bloch sphere
 # this code is not fully optimized, but its intended purpose is to demonstrate how one would go about doing these calculations by hand
 
@@ -50,6 +51,13 @@ class RotationConversions():
             [-1.0, 1.0]
 
         '''
+        
+        # make sure that the operator is unitary and hermitian, and throw an ArithmeticError if it is not
+        if (not OperatorChecker.check_hermitian(operator)):
+            raise ArithmeticError("Passed operator is not hermitian")
+            
+        if (not OperatorChecker.check_unitary(operator)):
+            raise ArithmeticError("Passed operator is not unitary")
 
         i = 1.0j # define the imaginary unit
 
@@ -94,6 +102,13 @@ class RotationConversions():
             [0.0, 0.0, 3.14159]
 
         '''
+        
+        # make sure that the operator is unitary and hermitian, and throw an ArithmeticError if it is not
+        if (not OperatorChecker.check_hermitian(operator)):
+            raise ArithmeticError("Passed operator is not hermitian")
+            
+        if (not OperatorChecker.check_unitary(operator)):
+            raise ArithmeticError("Passed operator is not unitary")
 
         def generate_vector_rotations(quantity): # this function is used to generate a given number of random pair of vectors such that one is the result of operating on the other with the operator
             vector_pairs = []
