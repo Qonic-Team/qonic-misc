@@ -1,13 +1,16 @@
 Metadata-Version: 2.1
 Name: qonic-misc
-Version: 0.0.3
+Version: 0.0.6
 Summary: Python library with miscellaneous tools to be used in conjunction with the qonic framework
 Home-page: https://github.com/Qonic-Team/qonic-misc.git
 Author: cogrpar
 Author-email: owen.r.welsh@hotmail.com
 License: Apache License 2.0
 Download-URL: https://github.com/Qonic-Team/qonic-misc/archive/refs/heads/main.zip
-Description: ## qonic-misc Python Library:
+Description: [![Build](https://api.travis-ci.com/Qonic-Team/qonic-misc.svg?branch=main)](https://travis-ci.com/github/Qonic-Team/qonic-misc)
+        [![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-misc)
+        
+        ## qonic-misc Python Library:
         Python library with miscellaneous tools to be used in conjunction with the qonic framework
         
         **To install:** `pip3 install qonic_misc`
@@ -65,7 +68,45 @@ Description: ## qonic-misc Python Library:
                     
                     
           * `qonic_misc.OperatorChecker`: tool for evaluating operators
+            * `check_hermitian(operator)`
         
+                **Description:**
+                * this function takes a 2 by 2 operator matrix and checks to see if it is hermitian (equal to its transposed conjugate)
+                * this is useful because all qbit operators corresponding to quantum logic gates must be hermitian
+            
+                **Parameters:**
+                * `operator <type 'list'>`: matrix representing the quantum operator
+                    
+                **Returns:**
+                * `hermitian <type 'bool'>`: boolean value storing if the passed matrix is hermitian
+             
+                **Example:**
+                
+                    >>> oc = qonic_misc.OperatorChecker
+                    >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
+                    >>> print(oc.check_hermitian(pauli_z)) # check to see if the pauli z gate is hermitian
+                    True
+        
+        
+        
+            * `check_unitary(operator)`
+                
+                **Description:**
+                * this function takes a 2 by 2 operator matrix and checks to see if it is unitary (produces the identity matrix when multiplied by its transposed conjugate)
+                * this is useful because all qbit operators corresponding to quantum logic gates must be unitary
+                
+                **Parameters:**
+                * `operator <type 'list'>`: matrix representing the quantum operator
+                    
+                **Returns:**
+                * `unitary <type 'bool'>`: boolean value storing if the passed matrix is unitary
+                
+                **Example:**
+                
+                    >>> oc = qonic_misc.OperatorChecker
+                    >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
+                    >>> print(oc.check_unitary(pauli_z) # check to see if the pauli z gate is unitary
+                    True
         
 Keywords: qonic,qonic_misc
 Platform: UNKNOWN
