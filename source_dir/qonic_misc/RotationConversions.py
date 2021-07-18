@@ -73,7 +73,10 @@ class RotationConversions():
         b1 = (operator_b / e**(i*phase))
 
         theta1 = (-2 * (acos(a1)).real) # calculate the new theta and phi values
-        phi1 = (-i * ln(b1 / sin(theta1 / 2)))
+        if (sin(theta1 / 2) == 0): # avoid divide by 0
+            phi1 = (-i * ln(b1 / 1E-15))
+        else:
+            phi1 = (-i * ln(b1 / sin(theta1 / 2)))
 
         return [theta1.real.round(10), phi1.real.round(10)] # return the updated theta and phi values, rounded to 10 decimal places for readability
 
