@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: qonic-misc
-Version: 0.0.9
+Version: 0.0.10
 Summary: Python library with miscellaneous tools to be used in conjunction with the qonic framework
 Home-page: https://github.com/Qonic-Team/qonic-misc.git
 Author: cogrpar

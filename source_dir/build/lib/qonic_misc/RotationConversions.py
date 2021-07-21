@@ -5,7 +5,7 @@ from numpy import arccos as acos
 from numpy import log as ln
 import tensorflow as tf
 import random
-from .OperatorChecker import *
+from OperatorChecker import *
 # this is an example of how quantum operator rotations can be mapped to rotations on the bloch sphere
 # this code is not fully optimized, but its intended purpose is to demonstrate how one would go about doing these calculations by hand
 
@@ -119,7 +119,7 @@ class RotationConversions():
                 # define an arbitrary initial state for the statevector to be in, defined by the two angles on the bloch sphere (just not along any of the axes on the bloch sphere to avoid division by 0)
                 theta0 = random.random() * pi / 2
                 phi0 = random.random() * pi / 2
-
+                
                 # calculate the new statevector in terms of the angles after applying the operator
                 theta1, phi1 = self.operator_to_updated_state(operator, theta0, phi0)
 
@@ -134,7 +134,6 @@ class RotationConversions():
                 z1 = cos(theta1)
 
                 vector_pairs.append([[x0, y0, z0], [x1, y1, z1]])
-
             return vector_pairs # return the list of vector pairs
 
         # generate the list of vector pairs that will be used to find the 3d spacial rotation that corresponds to this operator
