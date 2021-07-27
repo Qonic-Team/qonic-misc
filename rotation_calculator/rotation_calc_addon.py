@@ -35,7 +35,7 @@ class Rot_vec_blend():
         print("Rotating the vector by: " + str([rot_x, rot_y, rot_z]) + "...")
         
         # loop to interpolate the rotation so that it plays out in real time
-        steps = 100
+        steps = 50
         time = 3 # time in seconds
         for i in range(steps):
             # rotate the vector by the inputs
@@ -43,9 +43,9 @@ class Rot_vec_blend():
             mat_rot_y = Matrix.Rotation(rot_y/steps, 4, 'Y')
             mat_rot_z = Matrix.Rotation(rot_z/steps, 4, 'Z')
             
-            self.vector.matrix_world @= mat_rot_z
-            self.vector.matrix_world @= mat_rot_y
-            self.vector.matrix_world @= mat_rot_x
+            self.vector.matrix_world = mat_rot_z @ self.vector.matrix_world
+            self.vector.matrix_world = mat_rot_y @ self.vector.matrix_world
+            self.vector.matrix_world = mat_rot_x @ self.vector.matrix_world
             
             self.vector.rotation_euler = self.vector.matrix_world.to_euler()
             sleep(time/steps)
