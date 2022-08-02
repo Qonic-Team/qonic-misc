@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name = 'qonic_misc',
     packages = ['qonic_misc'],
-    version = '0.0.10',
+    version = '0.0.11',
     description = 'Python library with miscellaneous tools to be used in conjunction with the qonic framework',
     author = 'cogrpar',
     author_email = 'owen.r.welsh@hotmail.com',

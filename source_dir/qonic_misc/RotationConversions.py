@@ -52,9 +52,7 @@ class RotationConversions():
 
         '''
         
-        # make sure that the operator is unitary and hermitian, and throw an ArithmeticError if it is not
-        if (not OperatorChecker.check_hermitian(operator)):
-            raise ArithmeticError("Passed operator is not hermitian")
+        # make sure that the operator is unitary, and throw an ArithmeticError if it is not
             
         if (not OperatorChecker.check_unitary(operator)):
             raise ArithmeticError("Passed operator is not unitary")
@@ -106,10 +104,8 @@ class RotationConversions():
 
         '''
         
-        # make sure that the operator is unitary and hermitian, and throw an ArithmeticError if it is not
-        if (not OperatorChecker.check_hermitian(operator)):
-            raise ArithmeticError("Passed operator is not hermitian")
-            
+        # make sure that the operator is unitary, and throw an ArithmeticError if it is not
+        
         if (not OperatorChecker.check_unitary(operator)):
             raise ArithmeticError("Passed operator is not unitary")
 
