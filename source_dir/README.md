@@ -1,4 +1,4 @@
-[![Build](https://api.travis-ci.com/Qonic-Team/qonic-misc.svg?branch=main)](https://travis-ci.com/github/Qonic-Team/qonic-misc)
+[![Python application](https://github.com/Qonic-Team/qonic-misc/actions/workflows/python-app.yml/badge.svg)](https://github.com/Qonic-Team/qonic-misc/actions/workflows/python-app.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-misc?targetFile=source_dir/requirements.txt)
 
 ## qonic-misc Python Library:
