@@ -29,5 +29,3 @@ try:
             print(rc.operator_to_updated_state(operator, 1, 1))
 except ArithmeticError:
             print("Caught exception - Success!")
-
-assert(1==2)
