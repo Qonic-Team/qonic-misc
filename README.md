@@ -1,5 +1,7 @@
 [![Python application](https://github.com/Qonic-Team/qonic-misc/actions/workflows/python-app.yml/badge.svg)](https://github.com/Qonic-Team/qonic-misc/actions/workflows/python-app.yml)
-[![Known Vulnerabilities](https://snyk.io/test/github/Qonic-Team/qonic-misc/badge.svg?targetFile=source_dir/requirements.txt)](https://snyk.io/test/github/Qonic-Team/qonic-misc?targetFile=source_dir/requirements.txt)
+[![CodeQL](https://github.com/Qonic-Team/qonic-misc/actions/workflows/codeql.yml/badge.svg)](https://github.com/Qonic-Team/qonic-misc/actions/workflows/codeql.yml)
+<sup>[`Snyk Vulnerability Report`](https://snyk.io/test/github/Qonic-Team/qonic-misc?targetFile=source_dir/requirements.txt)</sup>
+
 
 # qonic-misc
 This repository stores miscellaneous tools and resources for use with the qonic framework
