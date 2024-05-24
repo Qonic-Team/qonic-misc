@@ -1,15 +1,20 @@
 Metadata-Version: 2.1
-Name: qonic-misc
-Version: 0.1.5
+Name: qonic_misc
+Version: 0.1.6
 Summary: Python library with miscellaneous tools to be used in conjunction with the qonic framework
 Home-page: https://github.com/Qonic-Team/qonic-misc.git
+Download-URL: https://github.com/Qonic-Team/qonic-misc/archive/refs/heads/main.zip
 Author: cogrpar
 Author-email: owen.r.welsh@hotmail.com
 License: Apache License 2.0
-Download-URL: https://github.com/Qonic-Team/qonic-misc/archive/refs/heads/main.zip
 Keywords: qonic,qonic_misc
-Platform: UNKNOWN
 Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22.2
+Requires-Dist: tensorflow>=2.12.0rc1
+Requires-Dist: keras>=2.13.1rc0
+Requires-Dist: setuptools>=65.5.1
+Requires-Dist: werkzeug>=3.0.3
+Requires-Dist: wheel>=0.38.0
 
 [![Python application](https://github.com/Qonic-Team/qonic-misc/actions/workflows/python-app.yml/badge.svg)](https://github.com/Qonic-Team/qonic-misc/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/Qonic-Team/qonic-misc/actions/workflows/codeql.yml/badge.svg)](https://github.com/Qonic-Team/qonic-misc/actions/workflows/codeql.yml)
@@ -112,5 +117,3 @@ Python library with miscellaneous tools to be used in conjunction with the qonic
             >>> pauli_z = [[1, 0], [0, -1]] # pauli z gate
             >>> print(oc.check_unitary(pauli_z) # check to see if the pauli z gate is unitary
             True
-
-
